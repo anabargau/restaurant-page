@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'dancing-script';
+    src: url('./dancing-script.ttf');
+}
+
+* {
+    font-family: 'dancing-script', sans-serif;
+}
+
+:root {
+    --color-dark-blue: #0c1723;
+    --color-transparent-black: rgba(0, 0, 0, 0.7);
+}
+
+html {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 900;
+    background-image: url(./home.jpg);
+    background-size: cover;
+    color: white;
+    background-position: center;
+}
+
+.about {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: var(--color-dark-blue);
+    color: white;
+    padding: 10px 100px 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 100px 10px;
+    background-color: var(--color-dark-blue);
+}
+
+button {
+    background-color: var(--color-dark-blue);
+    color: white;
+    border: none;
+    font-size: 22px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+nav>ul {
+    display: flex;
+    gap: 70px;
+}
+
+.menu-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./menu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-transparent-black);
+    color: white;
+    height: 80%;
+    padding: 20px;
+    gap: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.menu-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.item-ingredients {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.contact-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./contact.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--color-transparent-black);
+    color: white;
+    gap: 30px;
+    padding: 50px;
+}
+
+.contact-page-title {
+    font-size: 45px;
+    font-weight: 800;
+    align-self: center;
+}
+
+.contact-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact-info {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
